@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/lib/jquery/jquery-3.6.0.min.js"></script>
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"
+        integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>ISMR Query Tool Mobile</title>
+</head>
+
+<body>
+    <header class="bg-dark text-center text-white">
+        <div class="container p-2">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <img src="/resources/images/icon/icon.png" width="40" height="40" class="d-inline-block align-top p-2" alt="">
+                <a class="navbar-brand" href="../home.html">ISMR Query Tool Mobile</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownSite"
+                                data-toggle="dropdown">Documentação</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../documentacao/plot_skyplot.html">Plot & SkyPlot</a>
+                                <a class="dropdown-item" href="../documentacao/advanced_plot.html">Advanced Plot</a>
+                                <!-- <a class="dropdown-item" href="#">Nova Funcionalidade</a> -->
+                                <a class="dropdown-item" href="../documentacao/historico.html">Histórico</a>
+                                <a class="dropdown-item" href="../documentacao/funcoes_adicionais.html">Funções Adicionais</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../download/downloads.html">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mb-4">
+        <div class="container p-2">
+            <div class="row m-0">
+                <div class="col-sm-6 mt-4">
+                    <div class="row">
+                        <div class="col-sm ml-5">
+                            <h3 class="m-3">
+                                Sobre
+                            </h3>
+                            <p class="m-3">
+                                &emsp;A iniciativa de criação de um aplicativo móvel que facilitasse a visualização, análise e
+                                compartilhamento de dados ISMR foi do Docente do IFSP de Presidente Epitácio Bruno Vani.
+                            </p>
+                            <p class="m-3">
+                                &emsp;O desenvolvimento foi realizado em parceiria com a UNESP de Presidente Prudente, que
+                                consistiu em uma bolsa disponibilizada ao discente do Câmpus de Presidente Epitácio
+                                Lincolon
+                                Fabiano. Este ficou encarregado de desenvolver toda a aplicação, tanto o layout como
+                                funcionalidades.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm ml-5">
+                            <h3 class="m-3">
+                                Contatos
+                            </h3>
+                            <section class="m-3">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="btn btn-outline-dark btn-circle m-1 border-0" href="#" role="button">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+                                        <a href="">Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-outline-dark btn-circle m-1 border-0" href="#" role="button">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-outline-dark btn-circle m-1 border-0" href="#" role="button">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                        <a href="">Google</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-outline-dark btn-circle m-1 border-0" href="#" role="button">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                        <a href="">Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-outline-dark btn-circle m-1 border-0" href="#" role="button">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                        <a href="">LinkeIn</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-outline-dark btn-circle m-1 border-0" href="#" role="button">
+                                            <i class="fa fa-github"></i>
+                                        </a>
+                                        <a href="">Github</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    </section>
+                </div>
+                <div class="col-sm-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm mt-4 mr-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Documentação</h5>
+                                        <p class="card-text">
+                                            O ISMR Query Tool Mobile foi desenvolvido em cima de tecnologias híbridas
+                                            sendo uma delas o Cordova.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Docs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm mt-4 mr-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Baixar o Aplicativo</h5>
+                                        <p class="card-text">O aplicativo está disponível para dispositivos Android
+                                            versão 8.0+.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-center text-white mb-0">
+        <!-- Grid container -->
+        <div class="container p-2">
+            <!-- Section: Social media -->
+            <!-- <section class="mb-4">
+                Facebook
+                <a class="btn btn-outline-light btn-circle m-1 border-0" href="#" role="button">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+
+                Twitter
+                <a class="btn btn-outline-light btn-circle m-1 border-0" href="#" role="button">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                Google
+                <a class="btn btn-outline-light btn-circle m-1 border-0" href="#" role="button">
+                    <i class="fa fa-google"></i>
+                </a>
+
+                Instagram
+                <a class="btn btn-outline-light btn-circle m-1 border-0" href="#" role="button">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+                LinkeIn
+                <a class="btn btn-outline-light btn-circle m-1 border-0" href="#" role="button">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                Github
+                <a class="btn btn-outline-light btn-circle m-1 border-0" href="#" role="button">
+                    <i class="fa fa-github"></i>
+                </a>
+            </section> -->
+            <!-- Section: Social media -->
+
+            <!-- Section: Text -->
+            <section class="mb-0 m-3">
+                <p class="footer-desciption">
+                    As estações de monitoramento legado dos projetos CIGALA e CALIBRA são atualmente mantidas por
+                    meio
+                    do projeto INCT GNSS NavAer, liderado pela FCT/UNESP.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://inct-gnss-navaer.fct.unesp.br/pt/">INCT GNSS-NavAer</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- <div class="container-sm">75% wide until small breakpoint</div>
+    <div class="container-md">75% wide until medium breakpoint</div>
+    <div class="container-lg">75% wide until large breakpoint</div>
+    <div class="container-xl">75% wide until extra large breakpoint</div>
+    <div class="container-xxl">75% wide until extra extra large breakpoint</div> -->
+</body>
+
+</html>
